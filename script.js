@@ -1,3 +1,5 @@
+alert("Welcome to my website!");
+
 
 function startGame() {
     let answer = prompt("What comes after A?");
