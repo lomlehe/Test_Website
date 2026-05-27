@@ -4,7 +4,6 @@ body {
     font-family: Arial;
 }
 
-/* container */
 .games {
     display: flex;
     justify-content: center;
@@ -13,10 +12,9 @@ body {
     margin-top: 20px;
 }
 
-/* BIG CARD DESIGN */
 .card {
-    width: 220px;              /* bigger width */
-    height: 180px;             /* fixed height = box shape */
+    width: 220px;
+    height: 180px;
     padding: 20px;
     border-radius: 25px;
     cursor: pointer;
@@ -28,7 +26,6 @@ body {
     justify-content: center;
 }
 
-/* colors */
 .card:nth-child(1) {
     background-color: #ff9aa2;
 }
@@ -41,15 +38,12 @@ body {
     background-color: #88d498;
 }
 
-/* hover animation */
 .card:hover {
     transform: scale(1.1);
 }
 
-/* text */
 .card h3 {
     font-size: 22px;
-    margin-bottom: 10px;
 }
 
 .card p {
