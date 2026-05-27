@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+<head>
     <title>Kids Learning Fun 🎨</title>
     <link rel="stylesheet" href="style.css">
+</head>
+
 </head>
 
 <body>
@@ -13,9 +17,25 @@
 
     <h2>Choose a Game 🎮</h2>
 
-<button onclick="alphabetGame()">Alphabet</button>
-<button onclick="numberGame()">Numbers</button>
-<button onclick="colorGame()">Colors</button>
+<div class="games">
+
+    <div class="card" onclick="alphabetGame()">
+        <h3>🔤 Alphabet</h3>
+        <p>A B C</p>
+    </div>
+
+    <div class="card" onclick="numberGame()">
+        <h3>🔢 Numbers</h3>
+        <p>1 2 3</p>
+    </div>
+
+    <div class="card" onclick="colorGame()">
+        <h3>🎨 Colors</h3>
+        <p>🌈 Fun Colors</p>
+    </div>
+
+</div>
+
 
 
     <script src="script.js"></script>
