@@ -4,6 +4,7 @@ body {
     font-family: Arial;
 }
 
+/* GAME CARDS */
 .games {
     display: flex;
     justify-content: center;
@@ -24,39 +25,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
-.card:nth-child(1) {
-    background-color: #ff9aa2;
-}
-
-.card:nth-child(2) {
-    background-color: #6ec1e4;
-}
-
-.card:nth-child(3) {
-    background-color: #88d498;
-}
+/* COLORS */
+.card:nth-child(1) { background: #ff9aa2; }
+.card:nth-child(2) { background: #6ec1e4; }
+.card:nth-child(3) { background: #88d498; }
 
 .card:hover {
     transform: scale(1.1);
 }
-.game-area {
+
+/* GAME AREA */
+#gameArea {
+    display: none;
     margin-top: 30px;
 }
 
+/* ANSWER BUTTONS */
 .answers button {
-    padding: 15px;
     margin: 10px;
-    font-size: 20px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
     border: none;
-    background-color: #ffcc70;
+    background: #4CAF50;
+    color: white;
     cursor: pointer;
 }
 
 .answers button:hover {
-    background-color: #ffaa00;
+    background: #45a049;
 }
 
 #result {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Kids Learning Fun 🎨</title>
     <link rel="stylesheet" href="main.css">
@@ -8,6 +7,42 @@
 
 <body>
 
-    <h1>🌈 Kids Learning Fun 🎨</h1>
-    <p>👶 Learn ABC, Numbers & Colors!</p>
+<h1>🌈 Kids Learning Fun 🎨</h1>
+<p>👶 Learn ABC, Numbers & Colors!</p>
 
+<div class="games">
+    <div class="card" onclick="alphabetGame()">
+        <h3>🔤 ABC Game</h3>
+        <p>Tap to learn letters</p>
+    </div>
+
+    <div class="card" onclick="numberGame()">
+        <h3>🔢 Number Game</h3>
+        <p>Tap to count numbers</p>
+    </div>
+
+    <div class="card" onclick="colorGame()">
+        <h3>🎨 Color Game</h3>
+        <p>Tap to learn colors</p>
+    </div>
+</div>
+
+<!-- GAME AREA -->
+<div id="gameArea">
+    <h2 id="question"></h2>
+
+    <div class="answers">
+        <button onclick="checkAnswer('A')">A</button>
+        <button onclick="checkAnswer('B')">B</button>
+        <button onclick="checkAnswer('C')">C</button>
+    </div>
+
+    <p id="result"></p>
+
+    <button onclick="goHome()">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
