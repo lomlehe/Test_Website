@@ -1,0 +1,43 @@
+body {
+    background-color: #fff3cd;
+    text-align: center;
+    font-family: Arial;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 220px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:nth-child(1) {
+    background-color: #ff9aa2;
+}
+
+.card:nth-child(2) {
+    background-color: #6ec1e4;
+}
+
+.card:nth-child(3) {
+    background-color: #88d498;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
