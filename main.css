@@ -41,3 +41,25 @@ body {
 .card:hover {
     transform: scale(1.1);
 }
+.game-area {
+    margin-top: 30px;
+}
+
+.answers button {
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffcc70;
+    cursor: pointer;
+}
+
+.answers button:hover {
+    background-color: #ffaa00;
+}
+
+#result {
+    font-size: 22px;
+    margin-top: 15px;
+}
