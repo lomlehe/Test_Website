@@ -1,39 +1,49 @@
-alert("Welcome to my website!");
+alert("Mini Game Pasal Boringgss");
 
+let correctAnswer = "";
 
-function startGame() {
-    let answer = prompt("What comes after A?");
-
-    if (answer.toLowerCase() === "b") {
-        alert("Correct! 🎉");
-    } else {
-        alert("Oops! Try again 😊");
-    }
-}
-
+// Show Alphabet Game
 function alphabetGame() {
-    let answer = prompt("What comes after A?");
-    if (answer.toLowerCase() === "b") {
-        alert("Correct! 🎉");
-    } else {
-        alert("Try again!");
-    }
+    document.getElementById("gameArea").style.display = "block";
+    document.querySelector(".games").style.display = "none";
+
+    document.getElementById("question").innerText = "🍎 What comes after A?";
+    correctAnswer = "B";
 }
 
+// Show Number Game
 function numberGame() {
-    let answer = prompt("What comes after 1?");
-    if (answer === "2") {
-        alert("Correct! 🎉");
+    document.getElementById("gameArea").style.display = "block";
+    document.querySelector(".games").style.display = "none";
+
+    document.getElementById("question").innerText = "🔢 What comes after 1?";
+    correctAnswer = "2";
+}
+
+// Show Color Game
+function colorGame() {
+    document.getElementById("gameArea").style.display = "block";
+    document.querySelector(".games").style.display = "none";
+
+    document.getElementById("question").innerText = "🌈 What color is the sky?";
+    correctAnswer = "blue";
+}
+
+// Check answer
+function checkAnswer(answer) {
+    let result = document.getElementById("result");
+
+    if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
+        result.innerText = "✅ Correct! 🎉";
     } else {
-        alert("Try again!");
+        result.innerText = "❌ Try again!";
     }
 }
 
-function colorGame() {
-    let answer = prompt("What color is the sky?");
-    if (answer.toLowerCase() === "blue") {
-        alert("Correct! 🎉");
-    } else {
-        alert("Try again!");
-    }
+// Go back to menu
+function goHome() {
+    document.getElementById("gameArea").style.display = "none";
+    document.querySelector(".games").style.display = "flex";
+    document.getElementById("result").innerText = "";
 }
+
